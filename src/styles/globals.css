@@ -8,7 +8,7 @@
 body {
   padding: 0;
   margin: 0;
-  font-family: "Lobster", sans-serif;
+  font-family: "Lobster", "Poppins", sans-serif;
   @apply min-h-screen overflow-x-hidden flex items-center justify-center !bg-[hsl(0,0%,98%)];
 }
 
@@ -23,8 +23,8 @@ body {
 }
 
 table {
-    border-collapse: collapse;
-    text-indent: 0;
+  border-collapse: collapse;
+  text-indent: 0;
 }
 
 tbody tr td {

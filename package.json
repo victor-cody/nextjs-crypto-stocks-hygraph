@@ -9,15 +9,15 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "eslint": "8.34.0",
-    "eslint-config-next": "13.2.1",
-    "next": "13.2.1",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
     "@apollo/client": "^3.7.9",
     "@next/font": "13.1.6",
+    "eslint": "8.34.0",
+    "eslint-config-next": "13.2.1",
     "graphql": "^16.6.0",
-    "millify": "^5.0.1"
+    "millify": "^5.0.1",
+    "next": "13.2.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.13",
