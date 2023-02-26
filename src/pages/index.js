@@ -10,8 +10,8 @@ export default function Home({ cryptocurrencies }) {
   return (
     <>
       <main className="main">
-        <div className="w-[100%]">
-          <table className="leading-relaxed w-[100%]">
+        <div className="container mx-auto px-2 lg:px-4">
+          <table className=" mantine-1991q65 leading-relaxed w-[100%]">
             <thead className="mb-4 pb-4">
               <tr className="text-xl">
                 <th>Name</th>
@@ -26,7 +26,7 @@ export default function Home({ cryptocurrencies }) {
               {currencies.map((crypto) => {
                 return (
                   <tr
-                    className="cursor-pointer border-t-2 border-[#e5e7eb] w-full hover:bg-gray-100"
+                    className="cursor-pointer border-t-2  border-[#e5e7eb] w-full hover:bg-gray-100 text-[1rem] font-semibold"
                     key={crypto.uuid}
                   >
                     <td className="h-full flex items-center gap-5">
@@ -43,16 +43,22 @@ export default function Home({ cryptocurrencies }) {
                     </td>
                     <td>
                       {" "}
-                      <span className="text-blue-600 py-[2px] px-[4px] bg-blue-200">
+                      <span className="text-blue-700 py-[2px] px-[4px] bg-blue-100">
                         #{crypto.rank}
                       </span>
                     </td>
-                    <td>${millify(crypto.price)}</td>
+                    <td>
+                      $
+                      {millify(crypto.price, {
+                        precision: 3,
+                        lowercase: true,
+                      })}
+                    </td>
                     <td
-                      className={`${
+                      className={`font-bold ${
                         crypto.change.includes("-")
-                          ? "text-red-500"
-                          : "text-green-600"
+                          ? "text-red-700"
+                          : "text-green-700"
                       }`}
                     >
                       {crypto.change}%
