@@ -9,9 +9,9 @@ export default function Home({ cryptocurrencies }) {
 
   return (
     <>
-      <main className="main">
+      <main className="flex flex-col justify-between items-center py-24 px-8 min-w-[100vw]">
         <div className="container mx-auto px-2 lg:px-4">
-          <table className=" mantine-1991q65 leading-relaxed w-[100%]">
+          <table className="crypto-stocks-table leading-relaxed w-[100%] border-collapse text-[#000]">
             <thead className="mb-4 pb-4">
               <tr className="text-xl">
                 <th>Name</th>
